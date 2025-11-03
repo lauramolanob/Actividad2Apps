@@ -56,7 +56,7 @@ const listFaq = [
 
 ]
 
-const FaqSection = (props) => (
+const Faq = (props) => (
     <>
         <section className="py-5">
             <div className="container">
@@ -79,4 +79,4 @@ const FaqSection = (props) => (
     </>
 )
 
-export default FaqSection;
+export default Faq;

@@ -20,7 +20,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/quienes-somos" element={<QuienesSomos />} />
-      <Route path="/faq" element={<Faq />} />
+      <Route path="/faq" element={<Faq nombre= "Preguntas frecuentes"/>} />
       <Route path="/contacto" element={<Contactanos />} />
       <Route path="/login" element={<LoginForm />} />
       <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />

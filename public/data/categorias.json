@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Artes",
+        "imagen": "/art.svg",
+        "url": "#"
+    },
+    {
+        "id": 2,
+        "nombre": "Biografías",
+        "imagen": "/biography.svg",
+        "url": "#"
+    },
+    {
+        "id": 3,
+        "nombre": "Autoayuda",
+        "imagen": "/selfhelp.svg",
+        "url": "#"
+    },
+    {
+        "id": 4,
+        "nombre": "Ciencias",
+        "imagen": "/science.svg",
+        "url": "#"
+    },
+    {
+        "id": 5,
+        "nombre": "Ficción",
+        "imagen": "/fiction.svg",
+        "url": "#"
+    },
+    {
+        "id": 6,
+        "nombre": "Novelas",
+        "imagen": "/novel.svg",
+        "url": "#"
+    }
+]

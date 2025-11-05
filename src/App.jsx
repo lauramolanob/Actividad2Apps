@@ -20,10 +20,9 @@ const App = () => (
     <ItemMenu />
     <Routes>
       <Route path="/" element={<Landing />} />
-      <Route path="/quienes-somos" element={<QuienesSomos />} />
+      <Route path="/quienes-somos" element={<QuienesSomos nombre= "Quiénes somos" />} />
       <Route path="/faq" element={<Faq nombre= "Preguntas frecuentes"/>} />
-      <Route path="/books" element={<Books nombre= "Tienda"/>} />
-      <Route path="/contacto" element={<Contactanos />} />
+      <Route path="/contacto" element={<Contactanos nombre ="Contáctanos" />} />
       <Route path="/login" element={<LoginForm />} />
       <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
       <Route path="*" element={<NotFound />} />

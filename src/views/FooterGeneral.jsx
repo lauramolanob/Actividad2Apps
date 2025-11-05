@@ -9,7 +9,7 @@ const FooterGeneral = () => (
         <footer id="footer">
             <Footer1 />
         </footer>
-        <section class="b-dark-green py-1">
+        <section className="b-dark-green py-1">
             <Footer2 />
         </section>
     </>

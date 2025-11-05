@@ -7,6 +7,7 @@ import Landing from "./views/Landing.jsx";
 import Contactanos from "./views/Contactanos.jsx";
 import QuienesSomos from "./views/QuienesSomos.jsx";
 import Faq from "./views/Faq.jsx";
+import Books from "./views/Books.jsx";
 import NotFound from "./views/NotFound.jsx";
 import LoginForm from "./views/Login.jsx";
 import Dashboard from "./views/Dashboard.jsx";
@@ -21,6 +22,7 @@ const App = () => (
       <Route path="/" element={<Landing />} />
       <Route path="/quienes-somos" element={<QuienesSomos />} />
       <Route path="/faq" element={<Faq nombre= "Preguntas frecuentes"/>} />
+      <Route path="/books" element={<Books nombre= "Tienda"/>} />
       <Route path="/contacto" element={<Contactanos />} />
       <Route path="/login" element={<LoginForm />} />
       <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />

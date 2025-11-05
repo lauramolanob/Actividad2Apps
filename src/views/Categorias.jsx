@@ -15,7 +15,7 @@ const Categorias = (props) =>  {
 
     return (
 
-    <section id="featured" className="py-3 py-lg-5">
+    <section id="featured" className="py-3 pt-lg-1 pb-lg-5">
         <div className="container">
             <div className="row justify-content-center flex-row flex-wrap">
                 <div className="d-flex flex-row justify-content-between align-items-center mb-3 mb-lg-5">

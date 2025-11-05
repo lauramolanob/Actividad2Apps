@@ -6,7 +6,7 @@ const Menu = ({NombreMenu}) => {
   
   const rutas = {
     'Inicio': '/',
-    'Tienda': '/tienda',
+    'Tienda': '/books',
     'Quiénes somos': '/quienes-somos',
     'Preguntas frecuentes': '/faq',
     'Contáctanos': '/contacto'

@@ -1,3 +1,28 @@
+/* Fonts */
+@font-face {
+    font-family: 'DMSans-Bold';
+    src: url('../assets/fonts/DMSans-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'DMSans-Regular';
+    src: url('../assets/fonts/DMSans-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+}
+
+@font-face {
+    font-family: 'DMSans-Medium';
+    src: url('../assets/fonts/DMSans-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
+    font-display: auto;
+}
+
 #root {
     width: 100%;
     margin: 0 !important;
@@ -5,18 +30,29 @@
     text-align: initial;
 }
 
-
-.openNav{
-    overflow: hidden;
-}
-
 body{
     margin: 0 !important; 
     padding: 0 !important; 
     overflow-x: hidden; 
     overflow-y: scroll;
-    font-family: "DM Sans", sans-serif !important;
+    font-family: "DMSans-Regular", sans-serif !important;
 }
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'DMSans-Bold';
+}
+
+.bold{
+    font-weight: bolder;
+    font-family: 'DMSans-Bold';
+}
+
+.openNav{
+    overflow: hidden;
+}
+
+
 
 /*Header styles*/
 
@@ -225,6 +261,32 @@ body{
 .openNav .menu {
 	right: 0;
 	box-shadow: 3px 0px 10px 3px rgba(0, 0, 0, 0.7);
+}
+
+.content-collapsed {
+  max-height: 50px;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  transition: all 0.55s ease;
+}
+
+.content-expanded {
+  max-height: 20vh; /* Valor alto en lugar de 'none' */
+  overflow: hidden;
+  transition: max-height 0.55s ease;
+}
+
+.ver-mas-btn {
+  background: none;
+  border: none;
+  color: #1c5052;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+
+.ver-mas-btn:hover {
+  text-decoration: underline;
 }
 
 /*Media queries*/

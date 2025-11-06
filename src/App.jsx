@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./views/Nav.jsx";
 import ItemMenu from "./components/ItemMenu.jsx";
@@ -12,23 +12,33 @@ import NotFound from "./views/NotFound.jsx";
 import LoginForm from "./views/Login.jsx";
 import Dashboard from "./views/Dashboard.jsx";
 import PrivateRoute from "./rutas/PrivateRoute.jsx";
+import Carrito from "./components/Carrito.jsx";
 import "./styles/App.css";
 
-const App = () => (
-  <>
-    <Nav />
-    <ItemMenu />
-    <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/quienes-somos" element={<QuienesSomos nombre= "Quiénes somos" />} />
-      <Route path="/faq" element={<Faq nombre= "Preguntas frecuentes"/>} />
-      <Route path="/contacto" element={<Contactanos nombre ="Contáctanos" />} />
-      <Route path="/login" element={<LoginForm />} />
-      <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-    <FooterGeneral />
-  </>
-);
+const App = () => {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const toggleCart = () => {setIsCartOpen(prev => !prev);}
+  
+  return (
+    <>
+      <Nav onToggleCart={toggleCart} />
+      <ItemMenu />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/books" element={<Books/>} />
+        <Route path="/quienes-somos" element={<QuienesSomos nombre= "Quiénes somos" />} />
+        <Route path="/faq" element={<Faq nombre= "Preguntas frecuentes"/>} />
+        <Route path="/contacto" element={<Contactanos nombre ="Contáctanos" />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <FooterGeneral />
+
+      <Carrito isVisible={isCartOpen} onClose={() => setIsCartOpen(false)} /> 
+      {isCartOpen && (<div className="modal-backdrop fade show" style={{zIndex: 1040}} onClick={() => setIsCartOpen(false)}/>)}
+    </>
+  );
+};
 
 export default App;

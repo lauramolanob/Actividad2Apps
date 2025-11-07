@@ -15,8 +15,8 @@ import PrivateRoute from "./rutas/PrivateRoute.jsx";
 import Carrito from "./components/Carrito.jsx";
 import "./styles/App.css";
 
-<<<<<<< HEAD
-const App = () => (
+
+const App = () => {
   <>
     <Nav />
     <ItemMenu />
@@ -32,9 +32,7 @@ const App = () => (
     </Routes>
     <FooterGeneral />
   </>
-);
-=======
-const App = () => {
+  
   const [isCartOpen, setIsCartOpen] = useState(false);
   const toggleCart = () => {setIsCartOpen(prev => !prev);}
   
@@ -59,6 +57,6 @@ const App = () => {
     </>
   );
 };
->>>>>>> 493bb2c09dbd4b6c7cf1ab9e936dbed053d7fb89
+
 
 export default App;

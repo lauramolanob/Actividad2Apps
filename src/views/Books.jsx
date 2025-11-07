@@ -21,7 +21,7 @@ const Books = (props, limit) => {
             <div className="container">
                 <div className="row justify-content-center flex-row flex-wrap">
                     <div className="d-flex flex-row justify-content-between align-items-center mb-3 mb-lg-5">
-                        <h3 className="green-color"><strong>Explora nuestras {props.nombre}</strong></h3>
+                        <h3 className="green-color"><strong>Explora nuestros libros</strong></h3>
                     </div>
 
                     <div className="row d-flex justify-content-center mt-0 mt-lg-2">

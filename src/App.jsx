@@ -20,6 +20,7 @@ const App = () => (
     <ItemMenu />
     <Routes>
       <Route path="/" element={<Landing />} />
+      <Route path="/books" element={<Books />} />
       <Route path="/quienes-somos" element={<QuienesSomos nombre= "Quiénes somos" />} />
       <Route path="/faq" element={<Faq nombre= "Preguntas frecuentes"/>} />
       <Route path="/contacto" element={<Contactanos nombre ="Contáctanos" />} />

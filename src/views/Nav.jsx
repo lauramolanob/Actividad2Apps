@@ -5,7 +5,7 @@ import ButtonCarrito from '../components/ButtonCarrito';
 import ButtonLogin from '../components/ButtonLogin';
 import { Link } from 'react-router-dom';
 
-const Nav = () => (
+const Nav = ({ onToggleCart }) => (
   <nav className="navbar navbar-expand-lg header-library py-3">
     <div className="container">
       <Link className="navbar-brand m-0 p-0" to="/">
@@ -28,7 +28,7 @@ const Nav = () => (
         <div className="d-flex align-items-center flex-grow-1">
           <Buscador />
           <div className="chart ms-4 d-flex justify-content-end flex-shrink-0">
-            <ButtonCarrito />
+            <ButtonCarrito onToggle={onToggleCart} />
             <ButtonLogin />
           </div>
         </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/App.css'; 
 import ContactForm from '../components/ContactForm.jsx';
-import Mapa from '../components/Mapa.jsx';
 
 const Contactanos = (props) =>  (
    
@@ -15,7 +14,6 @@ const Contactanos = (props) =>  (
                <div className="col-md-10">
                 <ContactForm/>{}
                 </div>
-                <Mapa/>
             </div>
         </div>
     </div>
